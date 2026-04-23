@@ -1,28 +1,16 @@
-# AD312-Assignment-Building-an-Interactive-Recipe-Gallery-with-React-
-Recipe Gallery 
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-William Anderson
+Currently, two official plugins are available:
 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Create an array of Three array images:
+## React Compiler
 
-Setup and Initial Configuration
-Create src/Gallery.jsx.
-Define a list of recipe images. Each image should have an id, url, and a description.
-Example list:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-export const images = [
+## Expanding the ESLint configuration
 
-  { id: 1, url: 'https://example.com/image1.jpg', description: 'Image 1' },
-
-  { id: 2, url: 'https://example.com/image2.jpg', description: 'Image 2' }
-
-];
-
- Set with useState(0) index to next and previous:
- Gallery Component Logic
-Use the useState hook to manage the current index of the displayed image.
-Display the image and its description based on the current index in the state.
-Navigation: Implement "Next" and "Previous" buttons to navigate through the images. Update the state accordingly.
-Requirement: Add boundary checks to prevent navigation beyond the first or last image in the list.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
